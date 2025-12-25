@@ -11,7 +11,7 @@ public class Binomial {
 	}
 
 	// Computes the Binomial function, basic version.
-	public static long binomial1(long n, long k) { 
+	public static long binomial1(int n, int k) { 
 		if (k > n) return 0;
 		if (k == 0 || n == 0) return 1;
 		return binomial1(n - 1, k) + binomial1(n - 1, k - 1);
